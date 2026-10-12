@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MD Day Trips · Millersville</title>
+<meta name="theme-color" content="#0f766e">
+<meta name="description" content="Day-trip picker from Millersville MD — real parks, museums, and Chesapeake spots with EXAMPLE drive-time bands. Offline TokenMax board.">
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 48 48" width="44" height="44">
+        <defs>
+          <linearGradient id="tg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#2dd4bf"/>
+            <stop offset="1" stop-color="#f5d0a9"/>
+          </linearGradient>
+        </defs>
+        <circle cx="24" cy="24" r="18" fill="#134e4a" stroke="url(#tg)" stroke-width="2.4"/>
+        <path d="M12 28c4-8 8-12 12-12s8 4 12 12" fill="none" stroke="#5eead4" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="24" cy="18" r="3" fill="#f5d0a9"/>
+      </svg>
+    </div>
+    <div>
+      <h1>MD Day Trips</h1>
+      <p class="tag">From Millersville · parks · museums · Chesapeake · EXAMPLE drive bands</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <span class="pill sand" id="homePill">Springbloom</span>
+    <span class="pill teal" id="countPill">Picks</span>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Day trip screens">
+  <button class="tab active" data-view="picks" role="tab" aria-selected="true">✦ Picks</button>
+  <button class="tab" data-view="parks" role="tab" aria-selected="false">🌲 Parks</button>
+  <button class="tab" data-view="museums" role="tab" aria-selected="false">🏛 Museums</button>
+  <button class="tab" data-view="water" role="tab" aria-selected="false">🌊 Water</button>
+  <button class="tab" data-view="filters" role="tab" aria-selected="false">◎ Filters</button>
+  <button class="tab" data-view="about" role="tab" aria-selected="false">About</button>
+</nav>
+
+<main>
+  <section id="view-picks" class="view active" role="tabpanel">
+    <div class="hero panel">
+      <p class="eyebrow">From [home address]</p>
+      <h2 class="view-title">Today’s day-trip board</h2>
+      <p class="lede">Real Maryland places — drive times are <strong>EXAMPLE</strong> bands. Hours: check the official site. Weather tip below when <code>data/weather.json</code> is present.</p>
+      <div class="weather-panel" id="weatherPanel"></div>
+      <div class="stat-row" id="statRow"></div>
+    </div>
+    <div id="picksRoot" class="card-grid"></div>
+  </section>
+
+  <section id="view-parks" class="view" role="tabpanel">
+    <div class="panel">
+      <h2 class="view-title">Parks & trails</h2>
+      <p class="lede">Quiet Waters, Downs, Patapsco, Jug Bay, Brookside, Columbia lakes — outdoor days.</p>
+    </div>
+    <div id="parksRoot" class="card-grid"></div>
+  </section>
+
+  <section id="view-museums" class="view" role="tabpanel">
+    <div class="panel">
+      <h2 class="view-title">Museums & indoor</h2>
+      <p class="lede">Science, industry, art, SERC visitor trails — rainy-day anchors when filtered.</p>
+    </div>
+    <div id="museumsRoot" class="card-grid"></div>
+  </section>
+
+  <section id="view-water" class="view" role="tabpanel">
+    <div class="panel">
+      <h2 class="view-title">Chesapeake & waterfront</h2>
+      <p class="lede">Sandy Point, Annapolis dock, lighthouse views — Bay-side half-days.</p>
+    </div>
+    <div id="waterRoot" class="card-grid"></div>
+  </section>
+
+  <section id="view-filters" class="view" role="tabpanel">
+    <div class="panel">
+      <h2 class="view-title">Filters</h2>
+      <p class="lede">Toggle kids-friendly, indoor rainy-day, and under ~45 min EXAMPLE drive. Applied across Picks and category tabs.</p>
+      <div class="filter-toggles" id="filterToggles">
+        <label class="tog"><input type="checkbox" id="fKids" checked> Kids-friendly</label>
+        <label class="tog"><input type="checkbox" id="fIndoor"> Indoor / rainy-day</label>
+        <label class="tog"><input type="checkbox" id="fDrive" checked> Under ~45 min EXAMPLE drive</label>
+      </div>
+      <p class="hint" id="filterHint"></p>
+      <div id="filterResults" class="card-grid"></div>
+    </div>
+  </section>
+
+  <section id="view-about" class="view" role="tabpanel">
+    <div class="panel">
+      <h2 class="view-title">About MD Day Trips</h2>
+      <p class="lede">Offline TokenMax burn build for Christopher Boyd — day trips from Millersville MD. Places are real; drive times labeled <strong>EXAMPLE</strong>. No invented hours.</p>
+      <ul class="about-list">
+        <li>Tabs: Picks · Parks · Museums · Water · Filters · About</li>
+        <li>Filter prefs → <code>localStorage</code> key <code>md-daytrips-v1</code></li>
+        <li>Optional weather tip: <code>data/weather.json</code> (else static NWS Annapolis tip)</li>
+        <li>Serve: <code>./run.sh</code> → http://127.0.0.1:4328/</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">MD Day Trips · Millersville · TokenMax · EXAMPLE drive bands · check official sites</footer>
+
+<script>
+window.__TRIPS__ = /*__TRIPS__*/ null /*__/TRIPS__*/;
+window.__WEATHER__ = /*__WEATHER__*/ null /*__/WEATHER__*/;
+/*__APP__*/
+</script>
+</body>
+</html>
