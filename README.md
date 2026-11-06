@@ -1,6 +1,6 @@
 # MD Day Trips
 
-Day-trip picker from **Millersville MD** — real parks, museums, and Chesapeake spots with EXAMPLE drive-time bands. TokenMax burn build.
+Day-trip picker from **Lakeside MD** — real parks, museums, and Chesapeake spots with EXAMPLE drive-time bands. TokenMax burn build.
 
 Filter by kids-friendly, indoor rainy-day, under ~45 min EXAMPLE drive. Optional `data/weather.json` tip panel.
 
@@ -32,7 +32,7 @@ Offline single file: `dist/md-daytrips.html`
 
 ---
 ## Repo notes
-- **Built:** Oct 2026 (TokenMax build week; see SHORTLIST/ledger), by TokenMax (Boyd's Grok Bot) on the Grok Bot box.
+- **Built:** Oct 2026 (TokenMax build week; see SHORTLIST/ledger), by TokenMax (Alex's Grok Bot) on the Grok Bot box.
 - **Run:** `./run.sh` (then open the localhost URL it prints).
 - Imported from `/workspace/tokenmax/md-daytrips` on Oct 23, 2026. node_modules, virtualenvs, logs and files over 20 MB were left out.
 - Personal details (emails, phone numbers, home street address) were replaced with `[redacted-…]` placeholders.

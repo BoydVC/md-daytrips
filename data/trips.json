@@ -1,8 +1,8 @@
 {
-  "title": "MD Day Trips · Millersville",
-  "home": "[home address], Millersville MD 21108",
+  "title": "MD Day Trips · Lakeside",
+  "home": "[home address], Lakeside MD 01234",
   "version": 1,
-  "note": "Real Maryland parks, museums, and Chesapeake spots from Millersville. Drive times are EXAMPLE bands — always check traffic and official sites for hours.",
+  "note": "Real Maryland parks, museums, and Chesapeake spots from Lakeside. Drive times are EXAMPLE bands — always check traffic and official sites for hours.",
   "weatherTipFallback": "Pair with NWS Annapolis board — check forecast before outdoor parks or water.",
   "places": [
     {
@@ -40,7 +40,7 @@
       "indoor": false,
       "driveBand": "under45",
       "driveExample": "EXAMPLE ~15–20 min",
-      "why": "Chesapeake shoreline trails and playgrounds close to KPD / Millersville.",
+      "why": "Chesapeake shoreline trails and playgrounds close to KPD / Lakeside.",
       "url": "https://www.aacounty.org/recreation-parks/parks/downs-park",
       "hoursNote": "Check official site."
     },
@@ -196,7 +196,7 @@
       "indoor": false,
       "driveBand": "under45",
       "driveExample": "EXAMPLE ~25–35 min",
-      "why": "Paved lake loops and playgrounds — easy stretch-legs day west of Millersville.",
+      "why": "Paved lake loops and playgrounds — easy stretch-legs day west of Lakeside.",
       "url": "https://www.columbiaassociation.org/",
       "hoursNote": "Open park paths; check Columbia Association for facility notices."
     },
